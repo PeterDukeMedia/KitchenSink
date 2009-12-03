@@ -86,7 +86,7 @@
 			var pw = tf2.value;
 			var activityIndicator = Titanium.UI.createActivityIndicator();
 			Titanium.UI.currentWindow.setRightNavButton(activityIndicator);
-			var url = "http://"+un+":"+pw+"@twitter.com/statuses/friends_timeline.json?count=50";
+			var url = "https://"+un+":"+pw+"@twitter.com/statuses/friends_timeline.json?count=50";
 			var xhr = Titanium.Network.createHTTPClient();
 			xhr.onload = function()
 			{
