@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.appcelerator.kitchensink"
+      package="com.lightrail.KitchenSink"
       android:versionCode="1"
       android:versionName="1"
 >
@@ -48,7 +48,7 @@
 		
 <!--
 		<provider
-			android:authorities="com.appcelerator.kitchensink.titanium"
+			android:authorities="com.lightrail.KitchenSink.titanium"
 			android:name="org.appcelerator.titanium.TitaniumContentProvider"
 		/>
 -->
