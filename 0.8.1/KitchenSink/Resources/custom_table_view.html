@@ -8,7 +8,7 @@
 
 
 	// add to DIV with ID = foo
-	var search = Titanium.UI.createSearchBar({barColor:'#385292', showCancel:false});
+	var search = Titanium.UI.createSearchBar({barColor:'#385292', showCancel:false, hidden:true});
 	search.addEventListener('change', function(e)
 	{
 	   e.value // search string as user types
@@ -50,25 +50,6 @@
 		{photo:'images/custom_tableview/user.png', user:'Lou Thompson',comment:'Singing in the rain.', button:'images/custom_tableview/commentButton.png', calendar:'images/custom_tableview/eventsButton.png', date:'9 hours ago'},
 		{photo:'images/custom_tableview/user.png', user:'Gary Coleman',comment:'Whatchou talkin bout Willis?', button:'images/custom_tableview/commentButton.png', calendar:'images/custom_tableview/eventsButton.png', date:'10 hours ago'},
 		{photo:'images/custom_tableview/user.png', user:'Willis',comment:'Hey Gary - shut your piehole.', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Fred Smith',comment:'I just went to the store', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Lucy Smith',comment:'I just hired a PI to follow Fred, then off to the store', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Don Corelone',comment:'Got some fresh fruit, conducted some business, took a nap', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Joe Bobby',comment:'Ate pizza.  Found a dollar.', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Don Corelone',comment:'Got some fresh fruit, conducted some business, took a nap', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Frankie',comment:'Trip over a cord, broke my neck.', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Lou Thompson',comment:'Singing in the rain.', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Gary Coleman',comment:'Whatchou talkin bout Willis?', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Willis',comment:'Hey Gary - shut your piehole.', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Fred Smith',comment:'I just went to the store', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Lucy Smith',comment:'I just hired a PI to follow Fred, then off to the store', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Don Corelone',comment:'Got some fresh fruit, conducted some business, took a nap', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Joe Bobby',comment:'Ate pizza.  Found a dollar.', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Don Corelone',comment:'Got some fresh fruit, conducted some business, took a nap', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Frankie',comment:'Trip over a cord, broke my neck.', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Lou Thompson',comment:'Singing in the rain.', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Gary Coleman',comment:'Whatchou talkin bout Willis?', button:'images/custom_tableview/commentButton.png'},
-		{photo:'images/custom_tableview/user.png', user:'Willis',comment:'Hey Gary - shut your piehole.', button:'images/custom_tableview/commentButton.png'},
-
 	];
 
 	var currentSelectedData = null;
@@ -157,10 +138,11 @@
 
 		}
 	);
-
+		
 	Titanium.UI.currentWindow.addView(tableView);
 	Titanium.UI.currentWindow.showView(tableView);
-
+	
+	tableView.scrollToIndex(5);
 	</script>
 </head>
 <body>
